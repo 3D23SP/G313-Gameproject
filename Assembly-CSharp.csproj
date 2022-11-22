@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BF0C1FFE-7C67-5B9E-8CA6-31D6B47FC2EE}</ProjectGuid>
+    <ProjectGuid>{BBC397EF-BDFC-95B2-9C0E-3D1195927914}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,10 +53,32 @@
     <UnityVersion>2021.3.2f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Fade\Scripts\FadeUI.cs" />
+    <Compile Include="Assets\Script\Player\timeWarp.cs" />
+    <Compile Include="Assets\Script\Player\CountDown.cs" />
+    <Compile Include="Assets\Script\SceneChange\RoleChg.cs" />
+    <Compile Include="Assets\Fade\Scripts\IFade.cs" />
     <Compile Include="Assets\Script\Enemy\NavMeshAgent2D.cs" />
-    <Compile Include="Assets\Script\Enemy\E_Move.cs" />
-    <Compile Include="Assets\Script\Player\animRun.cs" />
+    <Compile Include="Assets\Script\SceneChange\Test.cs" />
+    <Compile Include="Assets\Script\SceneChange\FadeInOut.cs" />
+    <Compile Include="Assets\Script\SceneChange\LoadingScene.cs" />
     <Compile Include="Assets\Script\Enemy\E_Respawn.cs" />
+    <Compile Include="Assets\Script\Camera\mainCmr.cs" />
+    <Compile Include="Assets\Fade\Scripts\Fade.cs" />
+    <Compile Include="Assets\Script\SceneChange\GameOverChg.cs" />
+    <Compile Include="Assets\Script\SceneChange\StartChg.cs" />
+    <Compile Include="Assets\Script\Enemy\E_Move.cs" />
+    <Compile Include="Assets\Fade\Scripts\FadeImage.cs" />
+    <Compile Include="Assets\Script\Player\animRun.cs" />
+    <Compile Include="Assets\Script\Enemy\E_Timer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Fade\Materials\UI-Fade-Cutout.shader" />
+    <None Include="Assets\Fade\Materials\UI-Mask.shader" />
+    <None Include="Assets\Fade\Materials\UI-Fade-Alpha.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -824,11 +846,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{3CD6985A-2175-F368-9562-192A7C82686F}</Project>
+      <Project>{FC96D935-762C-7D63-04C4-D130F1C934D3}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{D5F19AFA-451E-AEC6-EF37-E1AB477F081C}</Project>
+      <Project>{8DE2431D-1FBF-2E88-6B37-FA8B9555C001}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>

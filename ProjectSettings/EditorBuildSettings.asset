@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: f032244f739635f48934e3d32d6b7744
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Role.unity
     guid: f3b1bf8652e136044840f25527467a56
   - enabled: 1
@@ -16,6 +16,9 @@ EditorBuildSettings:
     guid: 54719ca062c23084790962ba05086120
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
+    guid: ff42eda7d17b16c41b2eddecbfdb5868
+  - enabled: 0
+    path: Assets/Scenes/GameScene1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
