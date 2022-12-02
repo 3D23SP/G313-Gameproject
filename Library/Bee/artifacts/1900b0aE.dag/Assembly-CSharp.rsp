@@ -386,6 +386,7 @@
 "Assets/Script/Player/CountDown.cs"
 "Assets/Script/Player/timeWarp.cs"
 "Assets/Script/SceneChange/FadeInOut.cs"
+"Assets/Script/SceneChange/GameManager.cs"
 "Assets/Script/SceneChange/GameOverChg.cs"
 "Assets/Script/SceneChange/LoadingScene.cs"
 "Assets/Script/SceneChange/RoleChg.cs"
