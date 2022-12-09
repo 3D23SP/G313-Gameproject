@@ -73,7 +73,17 @@
     <Compile Include="Assets\Script\Enemy\E_Move.cs" />
     <Compile Include="Assets\Fade\Scripts\FadeImage.cs" />
     <Compile Include="Assets\Script\Player\animRun.cs" />
+    <Compile Include="Assets\Script\SceneChange\GameManager.cs" />
     <Compile Include="Assets\Script\Enemy\E_Timer.cs" />
+    <Compile Include="Assets\Script\Stage\HPGM.cs" />
+    <Compile Include="Assets\Script\Stage\ItemInventory.cs" />
+    <Compile Include="Assets\Script\Stage\ObjectT.cs" />
+    <Compile Include="Assets\Script\Stage\Heal.cs" />
+    <Compile Include="Assets\Script\Stage\StageG_Key.cs" />
+    <Compile Include="Assets\Script\Stage\StageG_Floor.cs" />
+    <Compile Include="Assets\Script\Stage\StageG_KeyF.cs" />
+    <Compile Include="Assets\Script\Stage\StageGM.cs" />
+    <Compile Include="Assets\Script\Stage\StageMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fade\Materials\UI-Fade-Cutout.shader" />
