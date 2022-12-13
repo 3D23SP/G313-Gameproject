@@ -33,6 +33,8 @@ public class timeWarp : MonoBehaviour
     //裏ランダムスポーン
     public Transform[] rsPos;
 
+    public GameObject[] NextMap;
+
     private FadeInOut fadeInOut;
 
     public bool fa;
@@ -99,6 +101,7 @@ public class timeWarp : MonoBehaviour
                 //裏世界スポーンランダム設定
                 int rnd = Random.Range(0, 5);
                 gameObject.transform.position = rsPos[rnd].position;
+                NextMap[rnd].SetActive(true);
                 ChgFlg = 1;
             }            
             else if (ChgFlg == 1)

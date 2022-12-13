@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public Grid MapGrid;
+    public GameObject StartRoomGrid;
     public Grid EnemyGrid;
 
     public GameObject PlayerPoint;    
@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MapGrid.gameObject.SetActive(true);
+        StartRoomGrid.SetActive(true);
         EnemyGrid.gameObject.SetActive(true);
 
         PlayerPoint.SetActive(true);
