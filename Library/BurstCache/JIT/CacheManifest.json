@@ -3,7 +3,7 @@
   "Assemblies": [
     {
       "FullName": "Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-12-09T08:22:13.4809343Z"
+      "LastWriteTime": "2022-12-13T06:55:37.4011066Z"
     },
     {
       "FullName": "netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
@@ -15,11 +15,11 @@
     },
     {
       "FullName": "Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-12-09T08:22:13.4774238Z"
+      "LastWriteTime": "2022-12-13T06:55:37.3808169Z"
     },
     {
       "FullName": "Unity.2D.Common.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-12-09T08:22:13.4809343Z"
+      "LastWriteTime": "2022-12-13T06:55:37.4109492Z"
     },
     {
       "FullName": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -27,7 +27,7 @@
     },
     {
       "FullName": "Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-12-09T08:22:13.4809343Z"
+      "LastWriteTime": "2022-12-13T06:55:37.4109492Z"
     },
     {
       "FullName": "UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -35,7 +35,7 @@
     },
     {
       "FullName": "Unity.2D.SpriteShape.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-12-09T08:22:13.4774238Z"
+      "LastWriteTime": "2022-12-13T06:55:37.4960427Z"
     },
     {
       "FullName": "UnityEngine.SpriteShapeModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -96,9 +96,10 @@
       "LinkName": "7D2E04AB7759F565",
       "AssemblyDependencyIndices": [
         3,
+        10,
         2,
-        5,
         6,
+        5,
         1,
         0,
         4,
@@ -123,10 +124,9 @@
       "LinkName": "7F9BDFAB3718C423",
       "AssemblyDependencyIndices": [
         3,
-        10,
+        7,
         2,
         6,
-        7,
         0,
         1,
         5
