@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject StartRoomGrid;
     public Grid EnemyGrid;
+    public GameObject MapGrid;
+
 
     public GameObject PlayerPoint;    
     public GameObject EnemyResPoint;
@@ -15,6 +17,9 @@ public class GameManager : MonoBehaviour
     {
         StartRoomGrid.SetActive(true);
         EnemyGrid.gameObject.SetActive(true);
+        MapGrid.SetActive(true);
+
+
 
         PlayerPoint.SetActive(true);
         EnemyResPoint.SetActive(true);
