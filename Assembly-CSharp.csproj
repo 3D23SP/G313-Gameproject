@@ -69,6 +69,7 @@
     <Compile Include="Assets\Script\Stage\ItemInventory.cs" />
     <Compile Include="Assets\Script\Stage\StageGM.cs" />
     <Compile Include="Assets\Script\SceneChange\FadeInOut.cs" />
+    <Compile Include="Assets\Script\Sound\CollSE.cs" />
     <Compile Include="Assets\Script\SceneChange\LoadingScene.cs" />
     <Compile Include="Assets\Script\Stage\StageG_Floor.cs" />
     <Compile Include="Assets\Script\Stage\HPGM.cs" />
