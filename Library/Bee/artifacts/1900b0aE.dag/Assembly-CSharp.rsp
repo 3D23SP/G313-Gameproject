@@ -392,6 +392,8 @@
 "Assets/Script/SceneChange/RoleChg.cs"
 "Assets/Script/SceneChange/StartChg.cs"
 "Assets/Script/SceneChange/Test.cs"
+"Assets/Script/Sound/animEventHook.cs"
+"Assets/Script/Sound/AudioPlayer.cs"
 "Assets/Script/Sound/CollSE.cs"
 "Assets/Script/Stage/Heal.cs"
 "Assets/Script/Stage/HPGM.cs"

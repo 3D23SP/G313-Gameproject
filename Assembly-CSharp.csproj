@@ -67,6 +67,7 @@
     <Compile Include="Assets\Script\SceneChange\Test.cs" />
     <Compile Include="Assets\Script\Stage\StageG_KeyF.cs" />
     <Compile Include="Assets\Script\Stage\ItemInventory.cs" />
+    <Compile Include="Assets\Script\Sound\AudioPlayer.cs" />
     <Compile Include="Assets\Script\Stage\StageGM.cs" />
     <Compile Include="Assets\Script\SceneChange\FadeInOut.cs" />
     <Compile Include="Assets\Script\Sound\CollSE.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\Fade\Scripts\Fade.cs" />
     <Compile Include="Assets\Script\Stage\StageMove.cs" />
     <Compile Include="Assets\Script\SceneChange\GameOverChg.cs" />
+    <Compile Include="Assets\Script\Sound\animEventHook.cs" />
     <Compile Include="Assets\Script\SceneChange\StartChg.cs" />
     <Compile Include="Assets\Script\Enemy\E_Move.cs" />
     <Compile Include="Assets\Script\Stage\StageG_Key.cs" />
