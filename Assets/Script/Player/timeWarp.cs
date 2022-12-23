@@ -39,19 +39,58 @@ public class timeWarp : MonoBehaviour
 
     public bool fa;
 
-    
+    //カウントダウン開始フラグ
+    public bool sFlg;
+    //フリーモードフラグ
+    public bool fFlg;
+    //カウントダウン開始位置
+    private Vector3 STarget;
+    //カウントダウンキャンバス
+    public GameObject Timer;
+    //エネミー
+    public GameObject Enemy;
+    //フリーモードキャンバス
+    public GameObject FreeMode;
+    //フェードインアウトキャンバス
+    public GameObject Fade;
+    //アイテムキャンバス
+    public GameObject Item;
+    //HPバーフラグ用のオブジェクト
+    public GameObject HPBarFlg;
 
     private void Start()
     {
         //countdownSeconds = countdownMinutes * 60;
         fa = false;
+        sFlg = false;
+        fFlg = true;
+        Fade.SetActive(true);
+        Item.SetActive(true);
         fadeInOut = GetComponentInChildren<FadeInOut>();
     }
 
     void Update()
     {
+        if(Input.GetKeyDown("1") && fFlg == true)
+        {
+            fFlg = false;
+            FreeMode.SetActive(true);
+            Enemy.SetActive(false);
+            Timer.SetActive(false);
+        }
+        else if(Input.GetKeyDown("1") && fFlg == false)
+        {
+            fFlg = true;
+            FreeMode.SetActive(false);
+        }
         //カウントダウン
-        countdownSeconds -= Time.deltaTime;
+        if (sFlg == true && fFlg == true)
+        {
+            Enemy.SetActive(true);
+            Timer.SetActive(true);
+
+            countdownSeconds -= Time.deltaTime;
+        }
         Transform Transform = this.transform;
         Vector2 Pos = Transform.position;
 
@@ -103,6 +142,7 @@ public class timeWarp : MonoBehaviour
                 gameObject.transform.position = rsPos[rnd].position;
                 NextMap[rnd].SetActive(true);
                 ChgFlg = 1;
+                HPBarFlg.SetActive(true);
             }            
             else if (ChgFlg == 1)
             {
@@ -113,9 +153,14 @@ public class timeWarp : MonoBehaviour
                 target.y = warpPoint.y;
                 gameObject.transform.position = target;
                 ChgFlg = 0;
+                HPBarFlg.SetActive(false);
             }
         }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        STarget = other.gameObject.transform.position;
+        sFlg = true;
+    }
 
-   
 }

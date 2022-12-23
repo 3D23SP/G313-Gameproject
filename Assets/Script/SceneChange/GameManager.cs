@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject StartRoomGrid;
+    public Grid MapGrid;
     public Grid EnemyGrid;
-    public GameObject MapGrid;
-
 
     public GameObject PlayerPoint;    
     public GameObject EnemyResPoint;
     public GameObject EnemyMapSetting;
+    public GameObject RWP;
+    public GameObject BWP;
+    public GameObject TakeItemPos;
     // Start is called before the first frame update
     void Start()
     {
-        StartRoomGrid.SetActive(true);
+        MapGrid.gameObject.SetActive(true);
         EnemyGrid.gameObject.SetActive(true);
-        MapGrid.SetActive(true);
-
-
 
         PlayerPoint.SetActive(true);
         EnemyResPoint.SetActive(true);
         EnemyMapSetting.SetActive(true);
+        RWP.SetActive(true);
+        BWP.SetActive(true);
+        TakeItemPos.SetActive(true);
     }
 
     

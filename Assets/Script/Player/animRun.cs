@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class animRun : MonoBehaviour
 {
+    private float spdX;
+    private float spdY;
+
     public float spd = 0.03f;
     Transform tf;
     Animator anim;
@@ -25,120 +28,96 @@ public class animRun : MonoBehaviour
         //キャラクター移動
         if (Input.GetKey("left") || Input.GetKey("a"))
         {
-            position.x -= spd;                      //左に移動
+            spdX -= spd;                        //左に移動            
         }
         if (Input.GetKey("right") || Input.GetKey("d"))
         {
-            position.x += spd;                      //右に移動
+            spdX += spd;                        //右に移動            
         }
         if (Input.GetKey("up") || Input.GetKey("w"))
         {
-            position.y += spd;                      //上に移動
+            spdY += spd;                        //上に移動            
         }
         if (Input.GetKey("down") || Input.GetKey("s"))
         {
-            position.y -= spd;                      //下に移動
-        }
-
-        //移動した向きで待機
-        if (Input.GetKeyUp("left") || Input.GetKeyUp("a"))
-        {
-            anim.SetBool("leftStand", true);        //左向きで待機
-        }
-        else if (Input.GetKeyUp("right") || Input.GetKeyUp("d"))
-        {
-            anim.SetBool("rightStand", true);       //右向きで待機
-        }
-        else if (Input.GetKeyUp("up") || Input.GetKeyUp("w"))
-        {
-            anim.SetBool("backStand", true);        //後向きで待機
-        }
-        else if (Input.GetKeyUp("down") || Input.GetKeyUp("s"))
-        {
-            anim.SetBool("frontStand", true);       //前向きで待機
+            spdY -= spd;                        //下に移動
         }
 
         //アニメーション
-        if(Input.GetKeyDown("left") || Input.GetKeyDown("a"))
+        if (spdX > 0)
         {
-            anim.SetBool("leftStand", false);       //Stand状態解除
-            anim.SetBool("rightStand", false);
-            anim.SetBool("backStand", false);
-            anim.SetBool("frontStand", false);
-      
-            anim.SetBool("rightRun", false);        //Run状態解除
-            anim.SetBool("backRun", false);
-            anim.SetBool("frontRun", false);
+            StandFalse();                       //Stand状態解除
+            RunFalse();                         //Run状態解除
+            anim.SetBool("rightRun", true);
+        }
+        if (spdX < 0)
+        {
+            StandFalse();                       //Stand状態解除
+            RunFalse();                         //Run状態解除
+            anim.SetBool("leftRun", true);
+        }
+        if (spdY > 0)
+        {
+            StandFalse();                       //Stand状態解除
+            RunFalse();                         //Run状態解除
+            anim.SetBool("backRun", true);
+        }
+        if (spdY < 0)
+        {
+            StandFalse();                       //Stand状態解除
+            RunFalse();                         //Run状態解除
+            anim.SetBool("frontRun", true);
+        }
 
-            anim.SetBool("leftRun", true);          //左向きに移動アニメーション
-        }
-        else if(Input.GetKeyUp("left") || Input.GetKeyUp("a"))
+        if (spdX == 0.0f && spdY == 0.0f)
         {
-            anim.SetBool("leftRun", false);
+            StandTrue();                        //Stand状態オン
+            RunFalse();                         //Run状態解除
         }
-        if (Input.GetKeyDown("right") || Input.GetKeyDown("d"))
-        {
-            anim.SetBool("leftStand", false);       //Stand状態解除
-            anim.SetBool("rightStand", false);
-            anim.SetBool("backStand", false);
-            anim.SetBool("frontStand", false);
 
-            anim.SetBool("leftRun", false);         //Run状態解除
-            anim.SetBool("backRun", false);
-            anim.SetBool("frontRun", false);
-
-            anim.SetBool("rightRun", true);         //右向きに移動アニメーション
-        }
-        else if (Input.GetKeyUp("right") || Input.GetKeyUp("d"))
-        {
-            anim.SetBool("rightRun", false);
-        }
-        if (Input.GetKeyDown("up") || Input.GetKeyDown("w"))
-        {
-            anim.SetBool("leftStand", false);       //Stand状態解除
-            anim.SetBool("rightStand", false);
-            anim.SetBool("backStand", false);
-            anim.SetBool("frontStand", false);
-                            
-            anim.SetBool("leftRun", false);         //Run状態解除               
-            anim.SetBool("rightRun", false);  
-            anim.SetBool("frontRun", false);
-
-            anim.SetBool("backRun", true);          //後向きに移動アニメーション
-        }
-        else if (Input.GetKeyUp("up") || Input.GetKeyUp("d"))
-        {
-            anim.SetBool("backRun", false);
-        }
-        if (Input.GetKeyDown("down") || Input.GetKeyDown("s"))
-        {
-                
-            anim.SetBool("leftStand", false);       //Stand状態解除               
-            anim.SetBool("rightStand", false);               
-            anim.SetBool("backStand", false);    
-            anim.SetBool("frontStand", false);
-
-                
-            anim.SetBool("leftRun", false);         //Run状態解除               
-            anim.SetBool("rightRun", false);               
-            anim.SetBool("backRun", false);
-
-            anim.SetBool("frontRun", true);         //前向きに移動アニメーション
-        }
-        else if (Input.GetKeyUp("down") || Input.GetKeyUp("s"))
-        {
-            anim.SetBool("frontRun", false);
-        }
+        position.x += spdX;
+        position.y += spdY;
 
         transform.position = position;
 
+        spdX = 0.0f;
+        spdY = 0.0f;
+
     }
 
+    //ゲームオーバー画面へ
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
             SceneManager.LoadScene("GameOver");
         }
+    }
+
+    //Stand状態解除
+    private void StandFalse()
+    {
+        anim.SetBool("leftStand", false);
+        anim.SetBool("rightStand", false);
+        anim.SetBool("backStand", false);
+        anim.SetBool("frontStand", false);
+    }
+
+    //Stand状態オン
+    private void StandTrue()
+    {
+        anim.SetBool("leftStand", true);
+        anim.SetBool("rightStand", true);
+        anim.SetBool("backStand", true);
+        anim.SetBool("frontStand", true);
+    }
+
+    //Run状態解除
+    private void RunFalse()
+    {
+        anim.SetBool("rightRun", false);
+        anim.SetBool("leftRun", false);
+        anim.SetBool("backRun", false);
+        anim.SetBool("frontRun", false);
     }
 }

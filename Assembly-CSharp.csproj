@@ -58,34 +58,21 @@
   <ItemGroup>
     <Compile Include="Assets\Fade\Scripts\FadeUI.cs" />
     <Compile Include="Assets\Script\Player\timeWarp.cs" />
-    <Compile Include="Assets\Script\Stage\ObjectT.cs" />
     <Compile Include="Assets\Script\Player\CountDown.cs" />
     <Compile Include="Assets\Script\SceneChange\RoleChg.cs" />
     <Compile Include="Assets\Fade\Scripts\IFade.cs" />
-    <Compile Include="Assets\Script\Stage\Heal.cs" />
     <Compile Include="Assets\Script\Enemy\NavMeshAgent2D.cs" />
     <Compile Include="Assets\Script\SceneChange\Test.cs" />
-    <Compile Include="Assets\Script\Stage\StageG_KeyF.cs" />
-    <Compile Include="Assets\Script\Stage\ItemInventory.cs" />
-    <Compile Include="Assets\Script\Sound\AudioPlayer.cs" />
-    <Compile Include="Assets\Script\Stage\StageGM.cs" />
     <Compile Include="Assets\Script\SceneChange\FadeInOut.cs" />
-    <Compile Include="Assets\Script\Sound\CollSE.cs" />
     <Compile Include="Assets\Script\SceneChange\LoadingScene.cs" />
-    <Compile Include="Assets\Script\Stage\StageG_Floor.cs" />
-    <Compile Include="Assets\Script\Stage\HPGM.cs" />
     <Compile Include="Assets\Script\Enemy\E_Respawn.cs" />
     <Compile Include="Assets\Script\Camera\mainCmr.cs" />
     <Compile Include="Assets\Fade\Scripts\Fade.cs" />
-    <Compile Include="Assets\Script\Stage\StageMove.cs" />
     <Compile Include="Assets\Script\SceneChange\GameOverChg.cs" />
-    <Compile Include="Assets\Script\Sound\animEventHook.cs" />
     <Compile Include="Assets\Script\SceneChange\StartChg.cs" />
     <Compile Include="Assets\Script\Enemy\E_Move.cs" />
-    <Compile Include="Assets\Script\Stage\StageG_Key.cs" />
     <Compile Include="Assets\Fade\Scripts\FadeImage.cs" />
     <Compile Include="Assets\Script\Player\animRun.cs" />
-    <Compile Include="Assets\Script\SceneChange\GameManager.cs" />
     <Compile Include="Assets\Script\Enemy\E_Timer.cs" />
   </ItemGroup>
   <ItemGroup>

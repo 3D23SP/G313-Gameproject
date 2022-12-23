@@ -49,11 +49,12 @@ public class E_Move : MonoBehaviour
         {
             
 
-            
+            if (StopTimer())
+            {
                 GotoNext();
                 Try = true;
-               EnemyStopTimer = 0.0f;
-            
+                EnemyStopTimer = 0.0f;
+            }
         }
         else if(Dis(Distance.x) < 5.0f && Dis(Distance.y) < 5.0f  )
         {           
@@ -97,7 +98,20 @@ public class E_Move : MonoBehaviour
     }
 
 
-    
+    private bool StopTimer()
+    {
+        EnemyStopTimer += 1;
+
+        if (EnemyStopTimer >= 23.0f)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 
     public void SetAi(bool SetAi)
     {

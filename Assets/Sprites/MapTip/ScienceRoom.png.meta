@@ -8301,11 +8301,11 @@ TextureImporter:
       ScienceRoom_30: -1813750679
       ScienceRoom_10: 1361968447
       ScienceRoom_219: -2067945771
-      ScienceRoom_255: 1251661746
+      ScienceRoom_370: -2045763915
       ScienceRoom_355: -274533917
       ScienceRoom_265: -1279973173
+      ScienceRoom_255: 1251661746
       ScienceRoom_348: -549686796
-      ScienceRoom_370: -2045763915
       ScienceRoom_336: -1503919752
       ScienceRoom_140: 151119416
       ScienceRoom_51: 1583422716
@@ -8505,9 +8505,9 @@ TextureImporter:
       ScienceRoom_59: 733600444
       ScienceRoom_125: -490688754
       ScienceRoom_75: -908929088
-      ScienceRoom_94: 194039988
       ScienceRoom_150: -1906061463
       ScienceRoom_210: -1111702127
+      ScienceRoom_94: 194039988
       ScienceRoom_383: 55139340
       ScienceRoom_213: -1328597019
       ScienceRoom_80: -511400781
@@ -8530,8 +8530,8 @@ TextureImporter:
       ScienceRoom_47: 1247237928
       ScienceRoom_69: 20848267
       ScienceRoom_72: 989609296
-      ScienceRoom_55: 1155518568
       ScienceRoom_88: 1269201265
+      ScienceRoom_55: 1155518568
       ScienceRoom_209: -1556213402
       ScienceRoom_338: 295708669
       ScienceRoom_118: -862944557
@@ -8553,8 +8553,8 @@ TextureImporter:
       ScienceRoom_57: 799199266
       ScienceRoom_4: -943006980
       ScienceRoom_196: 938994620
-      ScienceRoom_252: -380055215
       ScienceRoom_377: -61483952
+      ScienceRoom_252: -380055215
       ScienceRoom_319: 992164831
       ScienceRoom_197: -2140409398
       ScienceRoom_327: -1746059035
@@ -8581,9 +8581,9 @@ TextureImporter:
       ScienceRoom_299: 1886272649
       ScienceRoom_165: 2129130038
       ScienceRoom_153: 1611398879
+      ScienceRoom_222: -1699698201
       ScienceRoom_42: 1958653229
       ScienceRoom_176: -2117589821
-      ScienceRoom_222: -1699698201
       ScienceRoom_48: 1417622349
       ScienceRoom_388: 875818397
       ScienceRoom_8: -1919592410
@@ -8610,8 +8610,8 @@ TextureImporter:
       ScienceRoom_382: 1527082327
       ScienceRoom_170: 474495923
       ScienceRoom_168: 957370888
-      ScienceRoom_241: 850847396
       ScienceRoom_387: 588317959
+      ScienceRoom_241: 850847396
       ScienceRoom_259: -2076745033
       ScienceRoom_257: 1848658465
       ScienceRoom_163: -173893398

@@ -4518,9 +4518,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 64
-        width: 32
-        height: 32
+        y: 45
+        width: 160
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5551,7 +5551,7 @@ TextureImporter:
         width: 61
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5606,11 +5606,11 @@ TextureImporter:
       Object_125: 1251814948
       Object_2: 1055001410
       Object_105: 1563060390
-      Object_181: -453273760
-      Object_246: -1775449036
-      Object_189: -325944426
       Object_84: 1440840558
       Object_209: 439826722
+      Object_246: -1775449036
+      Object_181: -453273760
+      Object_189: -325944426
       Object_32: -1506812688
       Object_183: 1865749425
       Object_90: 730243587
@@ -5708,11 +5708,11 @@ TextureImporter:
       Object_137: 1687050027
       Object_165: -1216205878
       Object_6: -743499847
+      Object_25: 541657060
       Object_202: 905105460
       Object_128: -515339765
-      Object_94: 1237593456
       Object_5: -1283318265
-      Object_25: 541657060
+      Object_94: 1237593456
       Object_210: 1510345975
       Object_78: 2044020517
       Object_9: 375778862

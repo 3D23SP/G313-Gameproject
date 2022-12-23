@@ -754,6 +754,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Floor_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2289b6662714add46ba81b7a5c76ec9b
+      internalID: -1413054013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ce7e03f59d6e5469a47c2543b30a9b
+      internalID: -434939001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_33
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea62bdb760897314a9c7a822b23872be
+      internalID: 587875241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -772,6 +835,7 @@ TextureImporter:
       Floor_27: 843557643
       Floor_7: 84283666
       Floor_15: -1896615190
+      Floor_32: -434939001
       Floor_2: -482414195
       Floor_21: 2087146054
       Floor_24: -1038649814
@@ -781,6 +845,7 @@ TextureImporter:
       Floor_22: -971057775
       Floor_9: -2017967239
       Floor_28: 941447073
+      Floor_31: -1413054013
       Floor_26: -701987242
       Floor_3: -1773151917
       Floor_11: 920186999
@@ -794,6 +859,7 @@ TextureImporter:
       Floor_23: 1372660230
       Floor_29: 112089132
       Floor_12: 312347156
+      Floor_33: 587875241
       Floor_25: -1157095629
       Floor_13: -1993689579
   spritePackingTag: 
